@@ -12,18 +12,18 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.label :title, 'Título' %>
+    <%= form.text_field :title, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= form.label :category %>
-    <%= form.text_field :category %>
+    <%= form.label :category, 'Categoría' %>
+    <%= form.text_field :category, class: 'form-control' %>
   </div>
 
   <div class="field">
-    <%= form.label :year %>
-    <%= form.number_field :year %>
+    <%= form.label :year, 'Año' %>
+    <%= form.number_field :year, class: 'form-control' %>
   </div>
 
   <div class="actions">

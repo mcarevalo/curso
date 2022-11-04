@@ -1,19 +1,19 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @book.title %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @book.category %>
-</p>
-
-<p>
-  <strong>Year:</strong>
-  <%= @book.year %>
-</p>
-
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <h2>Detalle del Libro</h1>
+  <div class="mb-3">
+    <label class="form-label">Título</label>
+    <input type="text" readonly="true" class="form-control" placeholder="<%= @book.title %>">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Categoría</label>
+    <input type="text" readonly="true" class="form-control" placeholder="<%= @book.category %>">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Año</label>
+    <input type="text" readonly="true" class="form-control" placeholder="<%= @book.year %>">
+  </div>
+  
+  <%= link_to 'Edit', edit_book_path(@book) %> |
+  <%= link_to 'Back', books_path %>
+</div>
